@@ -1,0 +1,103 @@
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\LoadClients\1478_36864\Default\Default\USBCOM_SIMCOM_COMMON_Class]
+    "Dll"="husbcom_simcom_common.dll"
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\LoadClients\1478_36866\Default\Default\USBCOM_SIMCOM_COMMON_Class]
+    "Dll"="husbcom_simcom_common.dll"
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class]
+    "EnablePowerManager"=dword:0
+    "TimeoutIdle"=dword:1770
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface0]
+    "Prefix"="VCP"
+    "Dll"="husbcom_simcom_common.dll"
+    "Index"=dword:1
+    "DeviceArrayIndex"=dword:1
+    "Priority256"=dword:65
+    "RxBufferSize"=dword:40000
+    "FriendlyName"="SimTech HS-USB Diagnostics 9000"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DeviceClassType"=dword:1
+    
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface1]
+    "Prefix"="VCP"
+    "Dll"="husbcom_simcom_common.dll"
+    "Index"=dword:2
+    "DeviceArrayIndex"=dword:1
+    "Priority256"=dword:65
+    "RxBufferSize"=dword:4000
+    "FriendlyName"="SimTech HS-USB NMEA 9000"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DeviceClassType"=dword:1
+    
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface2]
+    "Prefix"="COM"
+    "Dll"="husbcom_simcom_common.dll"
+    ;"Index"=dword:8
+    "DeviceArrayIndex"=dword:1
+    "Priority256"=dword:65
+    "RxBufferSize"=dword:20000
+    "AttachEvName"="SIMCOM_COMMON_Attach"
+    "DetachEvName"="SIMCOM_COMMON_Detach"    
+    "FriendlyName"="SimTech HS-USB ATCOM 9000"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DeviceClassType"=dword:1
+    
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface3]
+    "Prefix"="COM"
+    "Dll"="husbcom_simcom_common.dll"
+    ;"Index"=dword:9
+    "DeviceArrayIndex"=dword:1
+    "Priority256"=dword:65
+    "RxBufferSize"=dword:40000
+    "FriendlyName"="SimTech HS-USB Modem 9000"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DeviceClassType"=dword:2
+    "EnableCDCCtrl"=dword:1
+    "EnableD4DTRDrop"=dword:1
+    "DumpRTxDataEnable"=dword:0
+    
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface3\Unimodem]
+    "Tsp"="Unimodem.dll"
+    "FriendlyName"="SimTech HS-USB Modem 9000"
+    "DeviceType"=dword:1
+    
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface3\Unimodem\Init]
+    "1"="AT<cr>"
+    "2"="ATE0V1&C1&D2<cr>"
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface3\Unimodem\Config]
+    "DialModifier"="+CGDCONT=1,\"IP\",\"cmnet\"<cr>"
+    "EnableFlowHard "=dword:0
+    "EnableFlowSoft "=dword:1
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface3\Unimodem\Settings]
+    "Prefix"="AT"
+    "Terminator"="<cr>"
+    "DialPrefix"="D"
+    "DialSuffix"=";"
+    "Pulse"="P"
+    "Tone"="T"
+    "Blind_Off"="X4"
+    "Blind_On"="X3"
+    "CallSetupFailTimeout"="ATS7=<#><cr>"
+    "Reset"="AT<cr>"
+    "Escape"="AT<cr>"
+    "Hangup"="ATH<cr>"
+    "PPPMTU"=dword:800
+    "EscapeDelay"=dword:3E8
+    "EscapeWait"=dword:3E8
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\ClientDrivers\USBCOM_SIMCOM_COMMON_Class\MultiInterface4]
+    "DeviceClassType"=dword:0
+
+[HKEY_CURRENT_USER\Software\SIMCom\Husbcom]
+    "debug_filename"="\\Storage Card\\husbcom_debugmsg.txt"
+    "debug_mode"=dword:0
+
+[HKEY_LOCAL_MACHINE\Comm\Tcpip\Parms]
+    "TcpWindowSize"=dword:80000
+
+[HKEY_LOCAL_MACHINE\Comm\Ppp\Parms]
+    "MaxConfigure"=dword:60

@@ -1,0 +1,13 @@
+V1.2.1.1
+1. Added support for hang up data call by drop DTR before WINCE system enter suspend, this feature 
+can enable/disable by registry key EnableD4DTRDrop.
+2. Added support for CDC control requests SetBreak, SetDTR, SetRTS, SetBaudRate, 
+SetByteSize, SetParity and SetStopBits, this feature can enable/disable by registry EnableCDCCtr.
+
+V1.2.1.0
+Fixed USB AUDIO function uplink audio data transmission fails. Modifid the transmission of data 
+packet length is an integer multiple of the endpoint BUFFER need to launch a zero length transfer, 
+this feature can be configured through the registry key DisableZeroPackage, supported by default.
+
+V1.2.0.9
+Fixed issue that the module can not be waked up in low-power mode sometimes.
